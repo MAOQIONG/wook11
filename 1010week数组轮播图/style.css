@@ -1,0 +1,27 @@
+#box{
+    width: 1200px;
+    height:600px;
+    margin:0 auto;
+    background: #000;
+    overflow: hidden;
+}
+#content{
+    width: 1200px;
+    height:600px;
+    cursor: pointer;
+}
+
+#box .preButton {
+    left: 10%;
+    position: absolute;
+    top:50%;
+    font-size: 40pt;
+    color: #ffffff;
+}
+#box .nextButton {
+    right: 10%;
+    position: absolute;
+    top:50%;
+    font-size: 40pt;
+    color: #ffffff;
+}
