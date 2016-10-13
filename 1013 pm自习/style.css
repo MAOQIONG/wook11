@@ -1,0 +1,46 @@
+#box{
+    width: 1200px;
+    height:600px;
+    margin:0 auto;
+    background: #000;
+    overflow: hidden;
+}
+#content{
+    width: 1200px;
+    height:600px;
+    cursor: pointer;
+}
+
+#preButton {
+    left: 10%;
+    position: absolute;
+    top:50%;
+    font-size: 40pt;
+    color: #000;
+}
+#nextButton {
+    right: 10%;
+    position: absolute;
+    top:50%;
+    font-size: 40px;
+    color: #000;
+}
+#chooser{
+    width: 217px;
+    height: 25px;
+    /*background: #fff;*/
+    position: absolute;
+    left: 600px;
+    top: 550px;
+}
+.choosers{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: #fff;
+    float: left;
+    margin-right: 6px;
+    cursor: pointer;
+    border-style: none;
+    outline: none;
+}

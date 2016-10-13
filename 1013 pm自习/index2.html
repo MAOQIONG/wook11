@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击切换123</title>
+</head>
+<style>
+    #box{width:200px;height:200px;background:pink;line-height:200px;font-size:30px;text-align:center;}
+</style>
+<body>
+    <div id="box"></div>
+    <button id="preButton">上一个</button>
+    <button id="nextButton">下一个</button>
+<script>
+    var i=1;
+    var box=document.getElementById("box");
+    box.textContent=i;
+
+    var nextButton=document.getElementById("nextButton");
+    nextButton.onclick=function(){
+        next();
+    };
+    var preButton=document.getElementById("preButton");
+    preButton.onclick=function(){
+        pre();
+    };
+    function next(){
+        i++;
+        if(i===4){
+            i=1;
+        }
+        box.textContent=i;
+    }
+    function pre(){
+        i--;
+        if(i===0){
+            i=3
+        }
+        box.textContent=i;
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
