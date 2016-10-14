@@ -1,0 +1,99 @@
+/*-------------------第一个轮播图------------------*/
+#box1{
+    width:1300px;
+    height:600px;
+    margin:20px auto;
+    /*background:#000;*/
+}
+#box{
+    width:1000px;
+    height:600px;
+    background:#a2a2a2;
+    margin:0 auto;
+}
+#content{
+    width:1000px;
+    height:600px;
+    overflow:hidden;
+    cursor: pointer
+}
+#preButton{
+    font-size:40px;
+    color:#a2a2a2;
+    position:absolute;
+    top:40%;
+    left:15%;
+}
+#nextButton{
+    font-size:40px;
+    color:#a2a2a2;
+    position:absolute;
+    top:40%;
+    right:15%;
+}
+#chooser{
+    width: 217px;
+    height: 25px;
+    position: absolute;
+    left: 600px;
+    top: 550px;
+}
+.choosers{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: #fff;
+    float: left;
+    margin-right: 6px;
+    cursor: pointer;
+    border-style: none;
+    outline: none;
+}
+/*------------------第二个轮播图----------------*/
+#box2{
+    width:1300px;
+    height:600px;
+    margin:50px auto;
+    /*background:#000;*/
+}
+#box_s{
+    width:1200px;
+    height:600px;
+    margin:0 auto ;
+    background:#a2a2a2;
+    position: relative;
+}
+#content_s{
+    width: 1200px;
+    height:600px;
+    overflow: hidden;
+    cursor: pointer
+}
+#preButton_s{
+    font-size:40px;
+    color:#fff;
+    position:absolute;
+    top:50%;
+    left:5%;
+}
+#nextButton_s{
+    font-size:40px;
+    color:#fff;
+    position:absolute;
+    top:50%;
+    right:5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
