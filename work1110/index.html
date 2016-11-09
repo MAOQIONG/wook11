@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #mycanvas{background:pink;position:absolute;margin: auto;top:0;bottom:0;left:0;right:0;}
+</style>
+<body>
+    <canvas id="mycanvas" width="500" height="500"></canvas>
+</body>
+<script>
+    var ocanvas = document.getElementById("mycanvas");
+    var mycanvas = ocanvas.getContext("2d");
+    function draw(start,per,color,fn) {
+        var nowper = 0;
+        var ox = ((200*Math.cos(start+per/2)+250)-250)/2+230;
+        var oy= ((200*Math.sin(start+per/2)+250)-250)/2+230;
+        var time = setInterval(function () {
+            nowper += per / 100;
+            if(nowper>=per){
+                clearInterval(time);
+                nowper=per;
+            }
+            mycanvas.beginPath();
+            mycanvas.fillStyle = color;
+            mycanvas.arc(250, 250, 200, start, start + nowper, false);
+            mycanvas.lineTo(250, 250);
+            mycanvas.closePath();
+            mycanvas.fill();
+            if(nowper>=per){
+                mycanvas.beginPath();
+                mycanvas.fillStyle="block";
+                mycanvas.font = "20px 宋体";
+                mycanvas.closePath();
+                mycanvas.fillText((per/(Math.PI*2))*100+"%",ox,oy);
+                fn();
+            }
+        }, 10)
+    }
+//    百分比转换为弧度
+        function content(pernum){
+            return(pernum/100)*2*Math.PI;
+        }
+        draw(0,content(50),"red",function(){
+            draw(content(50),content(20),"yellow",function(){
+                draw(content(70),content(30),"blue",function(){
+
+                })
+            })
+        })
+</script>
+</html>
